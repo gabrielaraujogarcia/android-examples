@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.minitagbrasil.exemplosintent">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" 
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.MenuActivity"
+            android:label="ExemplosIntent">
+
+            <intent-filter>
+                <!-- indica que e a activity principal do projeto -->
+                <action android:name="android.intent.action.MAIN"/>
+
+                <!-- indica que deve ser criado um lancador do aplicativo no aparelho -->
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
+        </activity>
+
+        <activity android:name=".activities.ExampleOpenBrowser"/>
+        <activity android:name=".activities.ExampleCallTelephone"/>
+        <activity android:name=".activities.ExampleShowPhoneBookContact"/>
+        <activity android:name=".activities.ExamplePickPhoneBookContact"/>
+        <activity android:name=".activities.ExampleReturnResultFromCustomActivity"/>
+
+    </application>
+
+</manifest>
+
+

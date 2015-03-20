@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Exemplos Intent</string>
+
+    <!-- form_browser layout -->
+    <string name="tap_url">Digite a URL e pressione o botão</string>
+    <string name="open_url">Go!</string>
+
+    <!-- call_number layout -->
+    <string name="click_to_call">Click para ligar para o número 9999-0808</string>
+    <string name="button_call_text">Ligar para 9999-08080</string>
+
+    <!-- show_phone book_contact layout -->
+    <string name="click_to_show_contact">Clique para exibir o primeiro contato da lista</string>
+    <string name="show_contact">Exibir contato</string>
+
+    <!-- example pick phone book contact-->
+    <string name="click_to_show_contacts">Clique para selecionar um contato</string>
+    <string name="select_contact">Selecionar contato</string>
+    <string name="nothink_selected">Nenhum contato selecionado</string>
+    <string name="selected_contact">Contato selecionado: </string>
+
+    <!-- example return result from custom activity -->
+    <string name="yes">Sim</string>
+    <string name="no">No</string>
+    <string name="chose_yes_no">Selecione "Sim" ou "Não"</string>
+
+</resources>
