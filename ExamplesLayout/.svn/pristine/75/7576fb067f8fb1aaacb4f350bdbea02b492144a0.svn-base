@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnExample1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Example 1: FrameLayout wrap_content"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btnExample2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Example 2: FrameLayout fill_parent"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/btnExample3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Example 3: Progress Bar"
+        android:textSize="10dp" />
+
+</LinearLayout>
