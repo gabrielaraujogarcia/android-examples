@@ -38,7 +38,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#DDD"/>
+        android:background="#DDD"
+        android:text="Este campo possui peso 1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Observações 2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#DDD"
+        android:text="Este campo possui peso 2 e por isto ocupa mais espaço que o campo com peso 1"/>
 
     <Button
         android:layout_width="wrap_content"

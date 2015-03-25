@@ -30,6 +30,9 @@
         <activity android:name=".activities.linearlayout.ExampleLinearLayoutGravity"/>
         <activity android:name=".activities.linearlayout.ExampleLinearLayoutElementWeight"/>
 
+        <!-- Table Layout -->
+        <activity android:name=".activities.tablelayout.MainTableLayout"/>
+        <activity android:name=".activities.tablelayout.ExampleTableLayoutShrink"/>
     </application>
 
 </manifest>
