@@ -1,0 +1,69 @@
+package br.com.minitagbrasil.exampleslayout.activities.linearlayout;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import br.com.minitagbrasil.exampleslayout.R;
+
+/**
+ * Created by ggarcia on 23/03/15.
+ */
+public class MainLinearLayout extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_linearlayout);
+
+        final Button example1 = (Button) findViewById(R.id.btnExample1);
+
+        example1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainLinearLayout.this, ExampleLinearLayoutHorizontal.class);
+                startActivity(it);
+            }
+
+        });
+
+        final Button example2 = (Button) findViewById(R.id.btnExample2);
+
+        example2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainLinearLayout.this, ExampleLinearLayoutVertical.class);
+                startActivity(it);
+            }
+
+        });
+
+        final Button example3 = (Button) findViewById(R.id.btnExample3);
+
+        example3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainLinearLayout.this, ExampleLinearLayoutGravity.class);
+                startActivity(it);
+            }
+
+        });
+
+        final Button example4 = (Button) findViewById(R.id.btnExample4);
+
+        example4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainLinearLayout.this, ExampleLinearLayoutElementWeight.class);
+                startActivity(it);
+            }
+
+        });
+    }
+}

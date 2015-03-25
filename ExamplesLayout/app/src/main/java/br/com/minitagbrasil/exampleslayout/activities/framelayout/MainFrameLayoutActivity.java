@@ -47,5 +47,19 @@ public class MainFrameLayoutActivity extends Activity {
             }
 
         });
+
+        final Button btnExample3 = (Button) findViewById(R.id.btnExample3);
+
+        btnExample3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent it = new Intent(MainFrameLayoutActivity.this, ExampleFrameLayoutProgressBar.class);
+                startActivity(it);
+
+            }
+
+        });
     }
 }

@@ -8,12 +8,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import br.com.minitagbrasil.exampleslayout.activities.framelayout.MainFrameLayoutActivity;
+import br.com.minitagbrasil.exampleslayout.activities.linearlayout.MainLinearLayout;
 
 
 public class MenuActivity extends ListActivity {
 
     private static final String[] options = new String[] {
             "Examples FrameLayout",
+            "Examples LinearLayout",
             "Sair"
     };
 
@@ -33,9 +35,16 @@ public class MenuActivity extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
+        Intent it;
+
         switch (position){
+
             case 0:
-                Intent it = new Intent(this, MainFrameLayoutActivity.class);
+                it = new Intent(this, MainFrameLayoutActivity.class);
+                startActivity(it);
+                break;
+            case 1:
+                it = new Intent(this, MainLinearLayout.class);
                 startActivity(it);
                 break;
             default:
