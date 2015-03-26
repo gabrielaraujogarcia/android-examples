@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <!--
+        a segunda de cada linha coluna deve esticar para ocupar o espaço restante da linha, conforme
+        definido em stretchColumns. Retire a marcacao  android:stretchColumns="1" para ver a diferenca
+    -->
+
+    <TableRow>
+        <TextView android:text="Usuário" android:padding="3dip"/>
+        <EditText android:padding="3dip"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Senha" android:padding="3dip"/>
+        <EditText android:padding="3dip"/>
+    </TableRow>
+
+    <TableRow android:gravity="right">
+        <Button android:text="Login"/>
+    </TableRow>
+
+</TableLayout>

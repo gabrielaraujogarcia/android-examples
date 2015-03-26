@@ -30,5 +30,30 @@ public class MainTableLayout extends Activity {
             }
 
         });
+
+        final Button example2 = (Button) findViewById(R.id.btnExample2);
+
+        example2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainTableLayout.this, ExampleTableLayoutStretch.class);
+                startActivity(it);
+            }
+
+        });
+
+        final Button example3 = (Button) findViewById(R.id.btnExample3);
+
+        example3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainTableLayout.this, ExampleFormWithTableLayout.class);
+                startActivity(it);
+            }
+
+        });
+
     }
 }

@@ -8,7 +8,19 @@
         android:id="@+id/btnExample1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Example 1: "/>
+        android:text="Example 1: shrinkColumns (quebrar linhas)"/>
+
+    <Button
+        android:id="@+id/btnExample2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example 2: stretchColumns (forçar preenchimento)"/>
+
+    <Button
+        android:id="@+id/btnExample3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example 3: form"/>
 
 
 </LinearLayout>

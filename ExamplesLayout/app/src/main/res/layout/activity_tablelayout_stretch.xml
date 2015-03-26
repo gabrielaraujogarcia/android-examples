@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <!-- stretchColumns forca a coluna preencher toda a extencao da tela -->
+    <TextView android:text="Lista de produtos"/>
+
+    <!--linha horizontal -->
+    <View android:layout_height="2dip" android:background="#ff9090"/>
+
+    <TableRow>
+        <TextView android:text="Produto A"/>
+        <TextView android:text="R$ 100,00" android:layout_gravity="right"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Produto B"/>
+        <TextView android:text="R$ 200,00" android:layout_gravity="right"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Produto C"/>
+        <TextView android:text="R$ 300,00" android:layout_gravity="right"/>
+    </TableRow>
+
+    <View android:layout_height="2dip" android:background="#ff9090"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:text="Comprar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:text="Cancelar"/>
+
+    </LinearLayout>
+
+</TableLayout>

@@ -18,8 +18,8 @@
         </activity>
 
         <!-- Frame Layout -->
-        <activity android:name=".activities.framelayout.ExampleFrameLayoutWrapContentActivity"/>
         <activity android:name=".activities.framelayout.MainFrameLayoutActivity"/>
+        <activity android:name=".activities.framelayout.ExampleFrameLayoutWrapContentActivity"/>
         <activity android:name=".activities.framelayout.ExampleFrameLayoutFillParentActivity"/>
         <activity android:name=".activities.framelayout.ExampleFrameLayoutProgressBar"/>
 
@@ -33,6 +33,8 @@
         <!-- Table Layout -->
         <activity android:name=".activities.tablelayout.MainTableLayout"/>
         <activity android:name=".activities.tablelayout.ExampleTableLayoutShrink"/>
+        <activity android:name=".activities.tablelayout.ExampleTableLayoutStretch"/>
+        <activity android:name=".activities.tablelayout.ExampleFormWithTableLayout"/>
     </application>
 
 </manifest>
