@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import br.com.minitagbrasil.exampleslayout.activities.framelayout.MainFrameLayoutActivity;
 import br.com.minitagbrasil.exampleslayout.activities.linearlayout.MainLinearLayout;
+import br.com.minitagbrasil.exampleslayout.activities.relativelayout.MainRelativeLayout;
 import br.com.minitagbrasil.exampleslayout.activities.tablelayout.MainTableLayout;
 
 
@@ -18,6 +19,7 @@ public class MenuActivity extends ListActivity {
             "Examples FrameLayout",
             "Examples LinearLayout",
             "Examples TableLayout",
+            "Examples RelativeLayout",
             "Sair"
     };
 
@@ -51,6 +53,10 @@ public class MenuActivity extends ListActivity {
                 break;
             case 2:
                 it = new Intent(this, MainTableLayout.class);
+                startActivity(it);
+                break;
+            case 3:
+                it = new Intent(this, MainRelativeLayout.class);
                 startActivity(it);
                 break;
             default:

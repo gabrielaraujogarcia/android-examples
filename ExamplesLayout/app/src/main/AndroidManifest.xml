@@ -35,6 +35,10 @@
         <activity android:name=".activities.tablelayout.ExampleTableLayoutShrink"/>
         <activity android:name=".activities.tablelayout.ExampleTableLayoutStretch"/>
         <activity android:name=".activities.tablelayout.ExampleFormWithTableLayout"/>
+
+        <!-- Relative Layout -->
+        <activity android:name=".activities.relativelayout.MainRelativeLayout"/>
+        <activity android:name=".activities.relativelayout.ExampleFormWithRelativeLayout"/>
     </application>
 
 </manifest>

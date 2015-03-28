@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8B8B83"
+    android:padding="10dip">
+
+    <!-- o primeiro elemento e colocado no topo e na esquerda da tela -->
+    <TextView
+        android:id="@+id/lblUsuario"
+        android:layout_width="55dip"
+        android:layout_height="wrap_content"
+        android:text="Usuário: "/>
+
+    <!-- ao lado do label usuario "layout_toRightOf" -->
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toRightOf="@+id/lblUsuario"/>
+
+    <!-- abaixo do txtUsuario "layout_below", alinhado a esquerda -->
+    <TextView
+        android:id="@+id/lblSenha"
+        android:layout_width="55dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsuario"
+        android:gravity="left"
+        android:text="Senha: "/>
+
+    <!-- ao lado do label senha "layout_toRightOf -->
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toRightOf="@+id/lblSenha"
+        android:layout_alignTop="@+id/lblSenha"
+        android:password="true"/>
+
+    <!-- abaixo do campo senha  "layout_below", alinhado a direita -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSenha"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="false" />
+
+</RelativeLayout>
