@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import br.com.minitagbrasil.exampleslayout.activities.absolutelayout.ExampleAbsoluteLayout;
 import br.com.minitagbrasil.exampleslayout.activities.framelayout.MainFrameLayoutActivity;
 import br.com.minitagbrasil.exampleslayout.activities.linearlayout.MainLinearLayout;
 import br.com.minitagbrasil.exampleslayout.activities.relativelayout.MainRelativeLayout;
@@ -20,6 +21,7 @@ public class MenuActivity extends ListActivity {
             "Examples LinearLayout",
             "Examples TableLayout",
             "Examples RelativeLayout",
+            "Example AbsoluteLayout (deprecated)",
             "Sair"
     };
 
@@ -59,6 +61,9 @@ public class MenuActivity extends ListActivity {
                 it = new Intent(this, MainRelativeLayout.class);
                 startActivity(it);
                 break;
+            case 4:
+                it = new Intent(this, ExampleAbsoluteLayout.class);
+                startActivity(it);
             default:
                 finish();
         }

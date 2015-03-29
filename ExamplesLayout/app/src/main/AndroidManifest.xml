@@ -39,6 +39,10 @@
         <!-- Relative Layout -->
         <activity android:name=".activities.relativelayout.MainRelativeLayout"/>
         <activity android:name=".activities.relativelayout.ExampleFormWithRelativeLayout"/>
+
+        <!-- Absolute Layout -->
+        <activity android:name=".activities.absolutelayout.ExampleAbsoluteLayout"/>
+
     </application>
 
 </manifest>
