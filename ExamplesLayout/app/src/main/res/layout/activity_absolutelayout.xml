@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005793">
+
+    <!--
+       layout_x indica a posicao no eixo x e layout_y indica a posicao no eixo y do plano cartesiano
+    -->
+
+    <TextView
+        android:layout_x="5px"
+        android:layout_y="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"/>
+
+    <EditText
+        android:layout_x="60px"
+        android:layout_y="10px"
+        android:layout_width="175px"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"/>
+
+    <TextView
+        android:layout_x="5px"
+        android:layout_y="55px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"/>
+
+    <EditText
+        android:layout_x="60px"
+        android:layout_y="55px"
+        android:layout_width="175px"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:password="true"/>
+
+    <Button
+        android:layout_x="180px"
+        android:layout_y="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:text="Login"/>
+
+</AbsoluteLayout>
