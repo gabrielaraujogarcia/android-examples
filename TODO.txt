@@ -1,0 +1,20 @@
+1) Transcrever os projetos que estão em Português para o Inglês.
+1) Transcribe the projects that are in Portuguese to English.
+
+
+2) Criar um novo projeto para agruapr os seguintes projetos:
+	
+	- ExampleListAdapterWithImages;
+	- ExemploListActivity;
+	- ExemploListarContatosAgenda;
+	- ExemploMenuComListActivity;
+	- ExemploSimpleAdapter;
+
+3) Create a project to group the following projects:
+	
+	- ExampleListAdapterWithImages;
+	- ExemploListActivity;
+	- ExemploListarContatosAgenda;
+	- ExemploMenuComListActivity;
+	- ExemploSimpleAdapter; 
+ 
