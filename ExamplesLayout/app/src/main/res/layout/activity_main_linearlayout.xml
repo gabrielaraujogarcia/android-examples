@@ -32,4 +32,10 @@
         android:layout_height="wrap_content"
         android:text="Example 4: element weight"/>
 
+    <Button
+        android:id="@+id/btnExample5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example 5: nestled layout"/>
+
 </LinearLayout>

@@ -29,6 +29,7 @@
         <activity android:name=".activities.linearlayout.ExampleLinearLayoutVertical"/>
         <activity android:name=".activities.linearlayout.ExampleLinearLayoutGravity"/>
         <activity android:name=".activities.linearlayout.ExampleLinearLayoutElementWeight"/>
+        <activity android:name=".activities.linearlayout.ExampleNestledLinearLayout"/>
 
         <!-- Table Layout -->
         <activity android:name=".activities.tablelayout.MainTableLayout"/>

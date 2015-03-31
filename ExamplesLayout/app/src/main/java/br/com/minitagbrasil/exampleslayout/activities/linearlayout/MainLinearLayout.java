@@ -65,5 +65,17 @@ public class MainLinearLayout extends Activity {
             }
 
         });
+
+        final Button example5 = (Button) findViewById(R.id.btnExample5);
+
+        example5.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainLinearLayout.this, ExampleNestledLinearLayout.class);
+                startActivity(it);
+            }
+
+        });
     }
 }
