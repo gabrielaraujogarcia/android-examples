@@ -18,6 +18,10 @@
         </activity>
 
         <activity android:name=".ExampleLinearLayoutAPI"/>
+        <activity android:name=".ExampleScrollView"/>
+        <activity android:name=".ExampleGridView"/>
+        <activity android:name=".ExampleGallery"/>
+
 
     </application>
 

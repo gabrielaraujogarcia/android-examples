@@ -15,19 +15,21 @@ import android.widget.ListView;
 public class MenuActivity extends ListActivity {
 
     private static final String[] menuItens = new String[] {
-            "Create LinearLayout from Activity (hardcore mode)"
+            "Create LinearLayout from Activity (hardcore mode)",
+            "ScrollView",
+            "GridView",
+            "Gallery"
         };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //cria o ListAdapter
-        ArrayAdapter<String> itens = new ArrayAdapter<String>(this,
+        //create the ListAdapter
+        ArrayAdapter<String> items = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, menuItens);
 
-        //seta o ListAdapter
-        setListAdapter(itens);
+        setListAdapter(items);
     }
 
     @Override
@@ -40,6 +42,19 @@ public class MenuActivity extends ListActivity {
             case 0:
                 it = new Intent(this, ExampleLinearLayoutAPI.class);
                 startActivity(it);
+                break;
+            case 1:
+                it = new Intent(this, ExampleScrollView.class);
+                startActivity(it);
+                break;
+            case 2:
+                it = new Intent(this, ExampleGridView.class);
+                startActivity(it);
+                break;
+            case 3:
+                it = new Intent(this, ExampleGallery.class);
+                startActivity(it);
+                break;
             default:
                 finish();
         }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example GridView"/>
+
+    <!--
+     auto_fit tells to android to adjust the width of a column automatically based on image size
+    -->
+
+    <GridView
+        android:id="@+id/grid1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dip"
+        android:verticalSpacing="10dip"
+        android:horizontalSpacing="10dip"
+        android:numColumns="auto_fit"
+        android:columnWidth="40dip"
+        android:gravity="center">
+
+
+    </GridView>
+
+
+</LinearLayout>
