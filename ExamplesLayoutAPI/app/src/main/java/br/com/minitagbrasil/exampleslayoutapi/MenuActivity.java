@@ -15,10 +15,11 @@ import android.widget.ListView;
 public class MenuActivity extends ListActivity {
 
     private static final String[] menuItens = new String[] {
-            "Create LinearLayout from Activity (hardcore mode)",
+            "Created LinearLayout from Activity (hardcore mode)",
             "ScrollView",
             "GridView",
-            "Gallery"
+            "Gallery (deprecated)",
+            "Image Switcher"
         };
 
     @Override
@@ -53,6 +54,10 @@ public class MenuActivity extends ListActivity {
                 break;
             case 3:
                 it = new Intent(this, ExampleGallery.class);
+                startActivity(it);
+                break;
+            case  4:
+                it = new Intent(this, ExampleImageSwitcher.class);
                 startActivity(it);
                 break;
             default:

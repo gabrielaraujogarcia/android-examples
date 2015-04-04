@@ -34,7 +34,10 @@ public class ExampleGridView extends Activity {
 
         GridView grid = (GridView) findViewById(R.id.grid1);
 
+        //set the image adapter that was created
         grid.setAdapter(new ImageAdapter(this, images));
+
+        //create a listener for when the user click on
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override

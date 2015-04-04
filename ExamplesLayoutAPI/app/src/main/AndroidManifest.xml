@@ -21,6 +21,7 @@
         <activity android:name=".ExampleScrollView"/>
         <activity android:name=".ExampleGridView"/>
         <activity android:name=".ExampleGallery"/>
+        <activity android:name=".ExampleImageSwitcher"/>
 
 
     </application>
