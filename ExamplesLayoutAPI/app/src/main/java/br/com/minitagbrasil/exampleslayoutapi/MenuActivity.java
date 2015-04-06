@@ -19,7 +19,8 @@ public class MenuActivity extends ListActivity {
             "ScrollView",
             "GridView",
             "Gallery (deprecated)",
-            "Image Switcher"
+            "Image Switcher",
+            "WebView"
         };
 
     @Override
@@ -60,6 +61,9 @@ public class MenuActivity extends ListActivity {
                 it = new Intent(this, ExampleImageSwitcher.class);
                 startActivity(it);
                 break;
+            case 5:
+                it = new Intent(this, ExampleWebView.class);
+                startActivity(it);
             default:
                 finish();
         }
