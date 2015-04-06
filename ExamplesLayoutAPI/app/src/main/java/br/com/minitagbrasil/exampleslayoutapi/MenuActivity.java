@@ -20,7 +20,8 @@ public class MenuActivity extends ListActivity {
             "GridView",
             "Gallery (deprecated)",
             "Image Switcher",
-            "WebView"
+            "WebView",
+            "Example TabHost"
         };
 
     @Override
@@ -64,6 +65,11 @@ public class MenuActivity extends ListActivity {
             case 5:
                 it = new Intent(this, ExampleWebView.class);
                 startActivity(it);
+                break;
+            case 6:
+                it = new Intent(this, ExampleTabHost.class);
+                startActivity(it);
+                break;
             default:
                 finish();
         }

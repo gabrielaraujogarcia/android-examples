@@ -26,6 +26,8 @@
         <activity android:name=".ExampleGallery"/>
         <activity android:name=".ExampleImageSwitcher"/>
         <activity android:name=".ExampleWebView"/>
+        <activity android:name=".ExampleTabHost"/>
+        <activity android:name=".tabs.TabOne"/>
 
 
     </application>
