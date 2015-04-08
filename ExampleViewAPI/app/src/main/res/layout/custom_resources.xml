@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- using hardcode text and styles -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text blue background white hardcode"
+        android:background="#0000ff"
+        android:textColor="#fff"
+        android:textStyle="bold"
+    />
+
+    <!-- using @String/ and @drawnable -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_green_white"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+     />
+
+    <!-- using @String/ and @style -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_red_white"
+        style="@style/css_example"
+    />
+
+</LinearLayout>

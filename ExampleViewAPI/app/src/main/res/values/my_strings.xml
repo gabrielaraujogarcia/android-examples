@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="msg_green_white">Text white and background green using @string and @drawnable</string>
+    <string name="msg_red_white">Text white and background red using @string and @style</string>
+    <string name="blue_text">Text of field one blue</string>
+
+</resources>
