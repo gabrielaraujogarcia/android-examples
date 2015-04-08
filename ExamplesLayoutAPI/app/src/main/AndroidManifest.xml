@@ -28,6 +28,7 @@
         <activity android:name=".ExampleWebView"/>
         <activity android:name=".ExampleTabHost"/>
         <activity android:name=".tabs.TabOne"/>
+        <activity android:name=".ExampleViewPager"/>
 
 
     </application>

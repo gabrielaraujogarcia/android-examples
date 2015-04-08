@@ -21,7 +21,8 @@ public class MenuActivity extends ListActivity {
             "Gallery (deprecated)",
             "Image Switcher",
             "WebView",
-            "Example TabHost"
+            "TabHost",
+            "ViewPager (recommended to replace Gallery)"
         };
 
     @Override
@@ -68,6 +69,10 @@ public class MenuActivity extends ListActivity {
                 break;
             case 6:
                 it = new Intent(this, ExampleTabHost.class);
+                startActivity(it);
+                break;
+            case 7:
+                it = new Intent(this, ExampleViewPager.class);
                 startActivity(it);
                 break;
             default:
