@@ -20,6 +20,8 @@
         <activity android:name=".ExampleCustonResources"/>
         <activity android:name=".ExampleTextViewAndEditText"/>
         <activity android:name=".ExampleAutoCompleteTextView"/>
+        <activity android:name=".ExampleButtonImageButton"/>
+        <activity android:name=".ExampleCheckBoxToggleButton"/>
 
     </application>
 

@@ -13,7 +13,9 @@ public class MainActivity extends ListActivity {
     private static final String[] items = new String[] {
         "Custom Resources",
         "TextView elements",
-         "TextView auto complete"
+         "TextView auto complete",
+         "Button and ImageButton",
+         "CheckBox and ToggleButton"
     };
 
     @Override
@@ -41,6 +43,14 @@ public class MainActivity extends ListActivity {
                 break;
             case 2:
                 it = new Intent(this, ExampleAutoCompleteTextView.class);
+                startActivity(it);
+                break;
+            case 3:
+                it = new Intent(this, ExampleButtonImageButton.class);
+                startActivity(it);
+                break;
+            case 4:
+                it = new Intent(this, ExampleCheckBoxToggleButton.class);
                 startActivity(it);
                 break;
         }

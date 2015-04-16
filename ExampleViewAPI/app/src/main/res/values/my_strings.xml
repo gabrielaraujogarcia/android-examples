@@ -4,5 +4,14 @@
     <string name="msg_green_white">Text white and background green using @string and @drawnable</string>
     <string name="msg_red_white">Text white and background red using @string and @style</string>
     <string name="blue_text">Text of field one blue</string>
+    <string name="click_green_square">The green square area was clicked!</string>
+    <string name="click_blue_square">The blue square area was clicked!</string>
+    <string name="msg_examples_check_and_toggle">Examples of Checkbox and ToggleButton</string>
+    <string name="check_1">CheckBox 1</string>
+    <string name="check_2">CheckBox 2</string>
+    <string name="msg_togglebutton">ToggleButton is used to show the status On or Off</string>
+    <string name="toggle_on">On</string>
+    <string name="toggle_off">Off</string>
+    <string name="btn_go">Go!</string>
 
 </resources>

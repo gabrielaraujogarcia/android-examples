@@ -10,4 +10,15 @@
 
     </style>
 
+    <style name="general_messages">
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">#aaa</item>
+
+    </style>
+
 </resources>
