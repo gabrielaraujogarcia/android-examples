@@ -29,23 +29,31 @@ public class ExampleCheckBoxToggleButton extends Activity {
             public void onClick(View v) {
 
                 StringBuilder text = new StringBuilder();
+                boolean allChecked = true;
 
                 if(toggle.isChecked()){
                     text.append("ToggleButton is ").append(toggle.getTextOn());
                 } else {
-                    text.append("Turn the ToggleButton on!");
+                    allChecked = false;
+                    text.append(" Turn the ToggleButton on! ");
                 }
 
                 if(check1.isChecked()){
                     text.append(check1.getText()).append(" is checked!");
                 } else {
-                    text.append("Check the").append(check1.getText());
+                    allChecked = false;
+                    text.append(" Check the").append(check1.getText());
                 }
 
                 if(check2.isChecked()){
                     text.append(check2.getText()).append(" is checked!");
                 } else {
-                    text.append("Check the ").append(check2.getText());
+                    allChecked = false;
+                    text.append(" Check the ").append(check2.getText());
+                }
+
+                if(allChecked){
+                    text = new StringBuilder("Lets rock!");
                 }
 
                 Toast.makeText(ExampleCheckBoxToggleButton.this, text.toString(),
