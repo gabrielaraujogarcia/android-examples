@@ -22,6 +22,8 @@
         <activity android:name=".ExampleAutoCompleteTextView"/>
         <activity android:name=".ExampleButtonImageButton"/>
         <activity android:name=".ExampleCheckBoxToggleButton"/>
+        <activity android:name=".ExampleRadioButton"/>
+        <activity android:name=".ExampleSpinner"/>
 
     </application>
 

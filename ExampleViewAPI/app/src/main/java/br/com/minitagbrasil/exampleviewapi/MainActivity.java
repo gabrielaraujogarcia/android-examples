@@ -15,7 +15,9 @@ public class MainActivity extends ListActivity {
         "TextView elements",
          "TextView auto complete",
          "Button and ImageButton",
-         "CheckBox and ToggleButton"
+         "CheckBox and ToggleButton",
+         "RadioButton and Checkbox",
+         "Spinner"
     };
 
     @Override
@@ -51,6 +53,14 @@ public class MainActivity extends ListActivity {
                 break;
             case 4:
                 it = new Intent(this, ExampleCheckBoxToggleButton.class);
+                startActivity(it);
+                break;
+            case 5:
+                it = new Intent(this, ExampleRadioButton.class);
+                startActivity(it);
+                break;
+            case 6:
+                it = new Intent(this, ExampleSpinner.class);
                 startActivity(it);
                 break;
         }

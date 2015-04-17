@@ -13,5 +13,10 @@
     <string name="toggle_on">On</string>
     <string name="toggle_off">Off</string>
     <string name="btn_go">Go!</string>
+    <string name="yes_or_no">Yes or no?</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_no">No</string>
+    <string name="ask_newsletter">Newsletter?</string>
+    <string name="txt_spinner">Spinner!</string>
 
 </resources>
