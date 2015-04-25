@@ -50,6 +50,7 @@ public class ExampleProgressDialog extends Activity {
 
                     //URL of an image
                     //https://tools.wmflabs.org/zoomviewer/index.php?f=Snake_River_(5mb).jpg&flash=no
+                    //"http://www.luizberto.com/wp-content/uploads/2013/12/PQR.jpg";
                     final String img = "http://www.satsignal.eu/wxsat/msg-1-fc-40.jpg";
 
                     //download the image
