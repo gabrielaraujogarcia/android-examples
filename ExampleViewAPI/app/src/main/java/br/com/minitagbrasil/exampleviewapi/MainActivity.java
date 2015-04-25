@@ -17,7 +17,8 @@ public class MainActivity extends ListActivity {
          "Button and ImageButton",
          "CheckBox and ToggleButton",
          "RadioButton and Checkbox",
-         "Spinner"
+         "Spinner",
+         "Progress Dialog"
     };
 
     @Override
@@ -61,6 +62,10 @@ public class MainActivity extends ListActivity {
                 break;
             case 6:
                 it = new Intent(this, ExampleSpinner.class);
+                startActivity(it);
+                break;
+            case 7:
+                it = new Intent(this, ExampleProgressDialog.class);
                 startActivity(it);
                 break;
         }

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.minitagbrasil.exampleviewapi" >
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +26,7 @@
         <activity android:name=".ExampleCheckBoxToggleButton"/>
         <activity android:name=".ExampleRadioButton"/>
         <activity android:name=".ExampleSpinner"/>
+        <activity android:name=".ExampleProgressDialog"/>
 
     </application>
 
