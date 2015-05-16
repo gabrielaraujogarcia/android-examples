@@ -18,5 +18,9 @@
     <string name="lbl_no">No</string>
     <string name="ask_newsletter">Newsletter?</string>
     <string name="txt_spinner">Spinner!</string>
-
+    <string name="txt_progressbar">A progressbar</string>
+    <string name="txt_show_toast">Show your custom toast!</string>
+    <string name="txt_anythink">Anythink here!</string>
+    <string name="txt_example_custom_layout">Example to Toast with custom layout</string>
+    <string name="txt_inflate">This layout was inflated from activity with support of LayoutInflater</string>
 </resources>

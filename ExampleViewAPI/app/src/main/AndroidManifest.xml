@@ -28,6 +28,7 @@
         <activity android:name=".ExampleSpinner"/>
         <activity android:name=".ExampleProgressDialog"/>
         <activity android:name=".ExampleProgressBar"/>
+        <activity android:name=".ExampleToastWithCustomView"/>
 
     </application>
 

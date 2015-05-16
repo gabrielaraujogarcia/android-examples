@@ -18,8 +18,9 @@ public class MainActivity extends ListActivity {
          "CheckBox and ToggleButton",
          "RadioButton and Checkbox",
          "Spinner",
-         "Progress Dialog",
-         "Progress Bar"
+         "Progress Dialog (sorry does not work)",
+         "Progress Bar (sorry does not work)",
+         "Toast with custom layout file"
     };
 
     @Override
@@ -71,6 +72,10 @@ public class MainActivity extends ListActivity {
                 break;
             case 8:
                 it = new Intent(this, ExampleProgressBar.class);
+                startActivity(it);
+                break;
+            case 9:
+                it = new Intent(this, ExampleToastWithCustomView.class);
                 startActivity(it);
                 break;
         }

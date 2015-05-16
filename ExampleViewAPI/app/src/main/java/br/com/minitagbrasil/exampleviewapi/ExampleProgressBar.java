@@ -28,7 +28,7 @@ public class ExampleProgressBar extends Activity {
         myProgress = (ProgressBar) findViewById(R.id.myProgressBar);
         Button btn = (Button) findViewById(R.id.btnGo);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new Button.OnClickListener() {
 
             @Override
             public void onClick(View v) {
