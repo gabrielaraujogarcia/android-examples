@@ -27,6 +27,7 @@
         <activity android:name=".ExampleRadioButton"/>
         <activity android:name=".ExampleSpinner"/>
         <activity android:name=".ExampleProgressDialog"/>
+        <activity android:name=".ExampleProgressBar"/>
 
     </application>
 
