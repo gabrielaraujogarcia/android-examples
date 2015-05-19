@@ -29,6 +29,7 @@
         <activity android:name=".ExampleProgressDialog"/>
         <activity android:name=".ExampleProgressBar"/>
         <activity android:name=".ExampleToastWithCustomView"/>
+        <activity android:name=".ExampleDialog"/>
 
     </application>
 

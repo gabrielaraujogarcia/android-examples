@@ -23,4 +23,10 @@
     <string name="txt_anythink">Anythink here!</string>
     <string name="txt_example_custom_layout">Example to Toast with custom layout</string>
     <string name="txt_inflate">This layout was inflated from activity with support of LayoutInflater</string>
+    <string name="btn_show_dialog">Show my dialog</string>
+    <string name="btn_show_dialog_custom_view">Show my dialog with a custom view</string>
+    <string name="title_yes_no_dialog">My first dialog</string>
+    <string name="title_dialog_custom_view">My first dialog</string>
+    <string name="txt_yes_no_dialog"> Please, choose yes or no!</string>
+    <string name="lbl_close">Close</string>
 </resources>

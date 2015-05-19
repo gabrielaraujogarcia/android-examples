@@ -20,7 +20,8 @@ public class MainActivity extends ListActivity {
          "Spinner",
          "Progress Dialog (sorry does not work)",
          "Progress Bar (sorry does not work)",
-         "Toast with custom layout file"
+         "Toast with custom layout file",
+         "Dialog"
     };
 
     @Override
@@ -76,6 +77,10 @@ public class MainActivity extends ListActivity {
                 break;
             case 9:
                 it = new Intent(this, ExampleToastWithCustomView.class);
+                startActivity(it);
+                break;
+            case 10:
+                it = new Intent(this, ExampleDialog.class);
                 startActivity(it);
                 break;
         }
