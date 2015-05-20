@@ -13,15 +13,16 @@ public class MainActivity extends ListActivity {
     private static final String[] items = new String[] {
         "Custom Resources",
         "TextView elements",
-         "TextView auto complete",
-         "Button and ImageButton",
-         "CheckBox and ToggleButton",
-         "RadioButton and Checkbox",
-         "Spinner",
-         "Progress Dialog (sorry does not work)",
-         "Progress Bar (sorry does not work)",
-         "Toast with custom layout file",
-         "Dialog"
+        "TextView auto complete",
+        "Button and ImageButton",
+        "CheckBox and ToggleButton",
+        "RadioButton and Checkbox",
+        "Spinner",
+        "Progress Dialog (sorry does not work)",
+        "Progress Bar (sorry does not work)",
+        "Toast with custom layout file",
+        "Dialog",
+        "ListView"
     };
 
     @Override
@@ -81,6 +82,10 @@ public class MainActivity extends ListActivity {
                 break;
             case 10:
                 it = new Intent(this, ExampleDialog.class);
+                startActivity(it);
+                break;
+            case 11:
+                it = new Intent(this, ExampleListView.class);
                 startActivity(it);
                 break;
         }

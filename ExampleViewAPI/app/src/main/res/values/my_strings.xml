@@ -29,4 +29,6 @@
     <string name="title_dialog_custom_view">My first dialog</string>
     <string name="txt_yes_no_dialog"> Please, choose yes or no!</string>
     <string name="lbl_close">Close</string>
+    <string name="example">Example</string>
+
 </resources>
