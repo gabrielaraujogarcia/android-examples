@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">ExampleAppMenu</string>
-    <string name="simple_menu">Simple Menu</string>
+    <string name="simple_menu">Simple Menu: click on menu to show it!</string>
 
     <!-- section of labels -->
     <string name="lbl_save">Save</string>
