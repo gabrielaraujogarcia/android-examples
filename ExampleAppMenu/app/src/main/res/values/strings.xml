@@ -1,3 +1,19 @@
 <resources>
+
     <string name="app_name">ExampleAppMenu</string>
+    <string name="simple_menu">Simple Menu</string>
+
+    <!-- section of labels -->
+    <string name="lbl_save">Save</string>
+    <string name="lbl_new">New</string>
+    <string name="lbl_delete">Delete</string>
+
+    <!-- section of text -->
+    <string name="txt_choose_new">Do a new item</string>
+    <string name="txt_choose_save">Now you will not lose your work :)</string>
+    <string name="txt_choose_delete">Are you sure?</string>
+
+    <!-- section of buttons -->
+    <string name="btn_simple_menu">Show the simple menu activity</string>
+
 </resources>
