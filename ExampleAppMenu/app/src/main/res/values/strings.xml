@@ -2,18 +2,26 @@
 
     <string name="app_name">ExampleAppMenu</string>
     <string name="simple_menu">Simple Menu: click on menu to show it!</string>
+    <string name="menu_from_xml">Menu from XML: click on menu to show it!</string>
 
     <!-- section of labels -->
     <string name="lbl_save">Save</string>
     <string name="lbl_new">New</string>
     <string name="lbl_delete">Delete</string>
+    <string name="lbl_search">Search</string>
+    <string name="lbl_clean">Clean</string>
+    <string name="lbl_others">Others</string>
 
     <!-- section of text -->
     <string name="txt_choose_new">Do a new item</string>
     <string name="txt_choose_save">Now you will not lose your work :)</string>
     <string name="txt_choose_delete">Are you sure?</string>
+    <string name="txt_choose_search">Google it!</string>
+    <string name="txt_choose_clean">Take a shower...</string>
+
 
     <!-- section of buttons -->
     <string name="btn_simple_menu">Show the simple menu activity</string>
 
 </resources>
+

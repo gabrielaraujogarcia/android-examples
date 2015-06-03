@@ -21,6 +21,9 @@ public class MainActivity extends Activity {
 
         //create event to the click on buttom of simple menu
         doSimpleMenu();
+
+        //create event to the click on buttom of menu from XML
+        doMenuFromXML();
     }
 
     private void doSimpleMenu(){
@@ -34,6 +37,25 @@ public class MainActivity extends Activity {
 
                 //start the activity
                 Intent it = new Intent(MainActivity.this, SimpleMenuActivity.class);
+                startActivity(it);
+
+            }
+
+        });
+
+    }
+
+    private void doMenuFromXML(){
+
+        Button menu = (Button) findViewById(R.id.btnMenuFromXML);
+
+        menu.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                //start the activity
+                Intent it = new Intent(MainActivity.this, MenuFromXML.class);
                 startActivity(it);
 
             }
