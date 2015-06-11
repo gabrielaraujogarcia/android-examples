@@ -11,8 +11,15 @@
 
     <Button
         android:id="@+id/btnDisplayMe"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Display Me Intent Filter"/>
+
+    <Button
+        android:id="@+id/btnDisplayIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display It Intent Filter"
+        android:layout_below="@+id/btnDisplayMe"/>
 
 </RelativeLayout>

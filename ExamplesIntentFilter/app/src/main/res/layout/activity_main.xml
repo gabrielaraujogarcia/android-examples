@@ -21,4 +21,11 @@
         android:text="Show 'Display Me' activty"
         android:layout_below="@+id/txtHello"/>
 
+    <Button
+        android:id="@+id/btnDisplayIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show 'Display It' activty"
+        android:layout_below="@+id/btnDisplayMe"/>
+
 </RelativeLayout>

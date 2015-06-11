@@ -27,6 +27,16 @@
 
         </activity>
 
+        <activity android:name=".DisplayItActivity">
+
+            <intent-filter>
+                <action android:name="ACTION_TEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="CUSTOM_CATEGORY"/>
+            </intent-filter>
+
+        </activity>
+
     </application>
 
 </manifest>

@@ -1,11 +1,11 @@
-package br.com.minitagbrasil.examplesintentfilter;
+package br.com.minitagbrasil.examplesintent.intentfilter;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 /**
- * Created by ggarcia on 10/06/15.
+ * Created by ggarcia on 09/06/15.
  */
 public class DisplayMeActivity extends Activity {
 
@@ -13,19 +13,16 @@ public class DisplayMeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //calling for default category of Android with action named "ACTION_TEST"
         Bundle extras = getIntent().getExtras();
-        TextView txt = new TextView(this);
+        TextView text = new TextView(this);
 
-        if(extras != null) {
-            //get String from extra
+        if(extras != null){
             String msg = extras.getString("message");
-            txt.setText(msg);
-
+            text.setText("This is the activity DisplayMe\nMessage: "+ msg);
         } else {
-            txt.setText("No extras!");
+            text.setText("This is the activity DisplayMe");
         }
 
-        setContentView(txt);
+        setContentView(text);
     }
 }

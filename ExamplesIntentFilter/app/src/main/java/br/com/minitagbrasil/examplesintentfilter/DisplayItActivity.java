@@ -5,17 +5,20 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 /**
- * Created by ggarcia on 10/06/15.
+ * Created by ggarcia on 11/06/15.
  */
-public class DisplayMeActivity extends Activity {
+public class DisplayItActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //get textview from layout xml file
+        setContentView(R.layout.display_it);
+
         //calling for default category of Android with action named "ACTION_TEST"
         Bundle extras = getIntent().getExtras();
-        TextView txt = new TextView(this);
+        TextView txt = (TextView) findViewById(R.id.txtMyText);
 
         if(extras != null) {
             //get String from extra
@@ -26,6 +29,5 @@ public class DisplayMeActivity extends Activity {
             txt.setText("No extras!");
         }
 
-        setContentView(txt);
     }
 }

@@ -16,6 +16,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         displayMe();
+        displayIt();
     }
 
     @Override
@@ -57,6 +58,27 @@ public class MainActivity extends ActionBarActivity {
 
         });
 
+
+    }
+
+    private void displayIt(){
+
+        Button btn = (Button) findViewById(R.id.btnDisplayIt);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //start an activity mapped in AndroidManifes.xml by an intent-filter with custom
+                //category to identify/differencing of DisplayMeActivity intent-filter name
+                Intent it = new Intent("ACTION_TEST");
+                it.addCategory("CUSTOM_CATEGORY");
+                it.putExtra("message", "With custom category!");
+                startActivity(it);
+
+            }
+
+        });
 
     }
 }
