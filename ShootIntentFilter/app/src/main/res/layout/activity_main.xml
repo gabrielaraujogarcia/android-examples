@@ -22,4 +22,18 @@
         android:text="Display It Intent Filter"
         android:layout_below="@+id/btnDisplayMe"/>
 
+    <Button
+        android:id="@+id/btnCallReceiver1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call ExampleReceiver1"
+        android:layout_below="@+id/btnDisplayIt"/>
+
+    <Button
+        android:id="@+id/btnCallReceiver2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call ExampleReceiver2"
+        android:layout_below="@+id/btnCallReceiver1"/>
+
 </RelativeLayout>
