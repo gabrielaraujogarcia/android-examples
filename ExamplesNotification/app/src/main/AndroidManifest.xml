@@ -19,6 +19,7 @@
 
         <activity android:name=".MyNotificantion"/>
         <activity android:name=".SeeNotification"/>
+        <activity android:name=".NotificationWithSetStyle"/>
 
     </application>
 

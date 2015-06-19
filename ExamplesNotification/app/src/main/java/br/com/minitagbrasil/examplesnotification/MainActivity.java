@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Button btn = (Button) findViewById(R.id.btnShotNotification);
-
+        Button btn2 = (Button) findViewById(R.id.btnNotificationWithStyle);
 
         btn.setOnClickListener(new View.OnClickListener() {
 
@@ -26,6 +26,18 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 Intent it = new Intent(MainActivity.this, MyNotificantion.class);
+                startActivity(it);
+
+            }
+
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent it = new Intent(MainActivity.this, NotificationWithSetStyle.class);
                 startActivity(it);
 
             }
