@@ -14,12 +14,12 @@ public class SeeNotification extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //cancel de notification
-        NotificationUtil.cancelNotification(this, R.drawable.check_blue_16x16);
-
         TextView txt = new TextView(this);
         txt.setText("This is your notification and it was removed from the notifications panel");
         setContentView(txt);
+
+        //cancel de notification
+        NotificationUtil.cancelNotification(this, R.drawable.check_blue_16x16);
 
     }
 }

@@ -26,7 +26,7 @@ public class MyNotificantion extends Activity {
         Intent callback = new Intent(this, SeeNotification.class);
 
         NotificationUtil.create(this, contentTitle, title, message, R.drawable.check_blue_16x16,
-                R.drawable.check_blue_16x16, callback);
+                R.drawable.info_32x32, R.drawable.check_blue_16x16, callback);
 
     }
 }

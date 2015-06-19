@@ -7,6 +7,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 
 /**
@@ -21,12 +22,12 @@ public class NotificationUtil {
      * @param contentTitle
      * @param title
      * @param message
-     * @param icon
+     * @param smallIcon
      * @param id
      * @param intent
      */
     public static void create(Context context, CharSequence contentTitle, CharSequence  title,
-        CharSequence message, int icon, int id, Intent intent) {
+        CharSequence message, int smallIcon, int largeIcon, int id, Intent intent) {
 
         //using to execute an action when the notification is selected
         PendingIntent pi = createPendingIntent(context, intent);
@@ -36,7 +37,7 @@ public class NotificationUtil {
         if(apiLevel >= 11){
 
             Notification.Builder builder = createNotificationBuilder(context, contentTitle,
-                    message, icon, pi);
+                    message, smallIcon, largeIcon, pi);
 
             if(apiLevel >= 17){
                 //Android 4.2
@@ -49,7 +50,7 @@ public class NotificationUtil {
         } else {
             
             //Android 2.2
-            notification = new Notification(icon, contentTitle, System.currentTimeMillis());
+            notification = new Notification(smallIcon, contentTitle, System.currentTimeMillis());
             notification.setLatestEventInfo(context, title, message, pi);
         }
 
@@ -112,17 +113,19 @@ public class NotificationUtil {
      * @param context
      * @param title
      * @param message
-     * @param icon
+     * @param smallIcon
      * @param pi
      * @return
      */
     private static final Notification.Builder createNotificationBuilder(Context context,
-        CharSequence title, CharSequence message, int icon, PendingIntent pi) {
+        CharSequence title, CharSequence message, int smallIcon, int largeIcon, PendingIntent pi) {
         //see also another options like setWhen and setVibrate
         return new Notification.Builder(context)
                 .setContentTitle(title)
                 .setContentText(message)
-                .setSmallIcon(icon)
+                .setSmallIcon(smallIcon)
+                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(),
+                        R.drawable.info_32x32))
                 .setContentIntent(pi);
 
     }
