@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ExamplesServices</string>
+    
+    <string name="tip_start_my_first_service">The "Start" button call the "MY_FIRST_SERVICE" service
+    and this service will executing while the method stopSelf() or the method stopService("INTENT_NAME")
+    is not called</string>
+
+    <string name="tip_stop_my_first_service">Call the method storService(new Intent("MY_FIRST_SERVICE"))
+        to stop the service "MY_FIRST_SERVICE" before it finishes processing.</string>
 </resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_start_my_first_service"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_stop_my_first_service"/>
+
+    <Button
+        android:id="@+id/btnStartMyFirstService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"/>
+
+    <Button
+        android:id="@+id/btnStopMyFirstService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multy-Threading Service"/>
+
+    <Button
+        android:id="@+id/btnStartMultiThreadingService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Multy-Threading Service"/>
+
+    <Button
+        android:id="@+id/btnStopMultiThreadingService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Multy-Threading Service"/>
+
+
+</LinearLayout>

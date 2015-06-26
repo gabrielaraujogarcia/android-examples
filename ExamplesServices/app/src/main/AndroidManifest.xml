@@ -3,11 +3,38 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
+        <activity
+            android:name="br.com.minitagbrasil.examplesservices.MainActivity"
+            android:label="ExamplesService">
+            <intent-filter>
+                <action android:name="ANDROID.INTENT.ACTION.MAIN" />
+                <category android:name="ANDROID.INTENT.CATEGORY.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
+        <!-- android:exported indicate that service is private and can't be called from another
+        applicatons -->
+        <service
+            android:name=".MyFirstService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="MY_FIRST_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyMultiThreadingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="MULTI_THREADING_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
 
     </application>
 
