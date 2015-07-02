@@ -43,5 +43,32 @@
         android:layout_height="wrap_content"
         android:text="Stop Multy-Threading Service"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open the MySecondService activity"/>
+
+    <Button
+        android:id="@+id/btnOpenMySecondService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My IntentService implementation: an another way to implement a serivce (can't be multi-thread)"/>
+
+    <Button
+        android:id="@+id/btnStartIntentService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"/>
+
+    <Button
+        android:id="@+id/btnStopIntentService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"/>
 
 </LinearLayout>

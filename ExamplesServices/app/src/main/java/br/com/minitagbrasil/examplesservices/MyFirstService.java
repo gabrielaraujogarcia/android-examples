@@ -10,7 +10,7 @@ import android.util.Log;
  */
 public class MyFirstService extends Service implements Runnable {
 
-    private static final int MAX = 10;
+    private static final int MAX = 100;
     private static final String CATEGORY = "Examples Services";
     protected int count;
     private boolean on;
@@ -68,7 +68,7 @@ public class MyFirstService extends Service implements Runnable {
     private void doSomethink(){
 
         try {
-            //sleeping for 1 second to simulate a processing
+            //sleeping for 2 second to simulate a processing
             Thread.sleep(2000);
         } catch (InterruptedException e){
             e.printStackTrace();;

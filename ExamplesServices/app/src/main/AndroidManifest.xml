@@ -11,10 +11,12 @@
             android:name="br.com.minitagbrasil.examplesservices.MainActivity"
             android:label="ExamplesService">
             <intent-filter>
-                <action android:name="ANDROID.INTENT.ACTION.MAIN" />
-                <category android:name="ANDROID.INTENT.CATEGORY.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MySecondServiceConnector"/>
 
         <!-- android:exported indicate that service is private and can't be called from another
         applicatons -->
@@ -35,6 +37,19 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </service>
+
+        <service
+            android:name=".MyIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="MY_INTENT_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".MySecondService"/>
+
+
 
     </application>
 
