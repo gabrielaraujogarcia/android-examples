@@ -14,8 +14,11 @@ public class MyIntentService extends IntentService {
     protected int count;
     private boolean on = true;
 
+    /**
+     * Default constructor is required
+     */
     public MyIntentService(){
-        super("MyIntentService");
+        super("ThreadNameHere");
     }
 
     /**
