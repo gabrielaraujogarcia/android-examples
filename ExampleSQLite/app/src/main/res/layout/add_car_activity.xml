@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_name"
+        android:id="@+id/txtName"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_plate"
+        android:paddingTop="15dp"
+        android:id="@+id/txtPlate"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="4"
+        android:hint="@string/lbl_year"
+        android:paddingTop="15dp"
+        android:id="@+id/txtYear" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_cancel"
+            android:id="@+id/btnCancel"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnSave"
+            android:layout_toStartOf="@+id/btnSave" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_save"
+            android:id="@+id/btnSave"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

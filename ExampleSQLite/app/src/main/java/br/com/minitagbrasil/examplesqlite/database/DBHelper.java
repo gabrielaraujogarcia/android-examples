@@ -33,11 +33,11 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //script to create the table
     public static final String CREATE_TABLE_CAR =
-                    SQL_CREATE_TABLE_IF_NOT_EXISTIS + TABLE_CAR + " (" +
-                    COLUMN_CAR_ID + SQL_INTEGER_TYPE + SQL_PRIMARY_kEY + SQL_AUTOINCREMENT +
-                    COLUMN_CAR_NAME + SQL_TEXT_TYPE + SQL_NOT_NULL  + COMMA_SEPARATOR +
-                    COLUMN_CAR_PLATE + SQL_TEXT_TYPE + SQL_NOT_NULL + COMMA_SEPARATOR +
-                    COLUMN_CAR_YEAR + SQL_INTEGER_TYPE + SQL_NOT_NULL + ")";
+        SQL_CREATE_TABLE_IF_NOT_EXISTIS + TABLE_CAR + " (" +
+        COLUMN_CAR_ID + SQL_INTEGER_TYPE + SQL_PRIMARY_kEY + SQL_AUTOINCREMENT + COMMA_SEPARATOR +
+        COLUMN_CAR_NAME + SQL_TEXT_TYPE + SQL_NOT_NULL  + COMMA_SEPARATOR +
+        COLUMN_CAR_PLATE + SQL_TEXT_TYPE + SQL_NOT_NULL + COMMA_SEPARATOR +
+        COLUMN_CAR_YEAR + SQL_INTEGER_TYPE + SQL_NOT_NULL + ")";
 
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -56,6 +56,10 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public static String[] getCarColumns(){
+        return new String[] {COLUMN_CAR_NAME, COLUMN_CAR_PLATE, COLUMN_CAR_YEAR};
+    }
+
+    public static String[] getCarColumnsWithId(){
         return new String[] {COLUMN_CAR_ID, COLUMN_CAR_NAME, COLUMN_CAR_PLATE, COLUMN_CAR_YEAR};
     }
 }

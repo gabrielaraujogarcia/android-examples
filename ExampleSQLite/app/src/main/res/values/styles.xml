@@ -5,4 +5,20 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="general_buttons">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:width">160dp</item>
+        <item name="android:height">160dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="steel_blue">#4682B4</color>
+    <color name="green">#008000</color>
+    <color name="deep_pink">#FF1493</color>
+    <color name="crimson">#DC143C</color>
+    <color name="fire_brick">#B22222</color>
+
 </resources>
